@@ -41,11 +41,14 @@ body {
     font-size: 1.5rem;
 }
 
-.search-box {
-    width: 25%;
-    border-radius: 60px;
-    align-items: center;
-    margin: 50px;
+.searchBox {
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 10%;
 
+}
+
+.search-box {
 }
 

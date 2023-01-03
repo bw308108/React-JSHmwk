@@ -1,30 +1,37 @@
-import { Component } from 'react';
-import Searchbox from './Components/Searchbox1';
-import Navbar from './Components/Navbar1';
-import Header from './Components/header1';
-import './App.css';
-import './styles.css'
+import { Routes, Route } from 'react-router-dom'
+import Home from './Routes/Home/Home';
+import React from 'react'
 
 
-class App extends Component {
-  constructor(){
-  super()
-  this.state = {
-    'name' : 'Brian'
-  }
+const App = () => {
+
+  return (
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/aboutMe' element={<aboutMe/>}/>
+    </Routes>
+  )
 }
 
-  render(){
-    return (
-      <div className="App-title">
-        <p>Hello, this is {this.state['name']}'s Blog  </p>
-      <Navbar bar='Home'/>
-      <Header />
-     <Searchbox/>
-    </div>
-  );
-}
-}
+// class App extends Component {
+//   constructor(){
+//   super()
+//   this.state = {
+//     'name' : 'Brian'
+//   }
+// }
+
+// render(){
+//   return (
+//     <div className="App-title">
+//       <p>Hello, this is {this.state['name']}'s Blog  </p>
+//     <Navbar bar='Home'/>
+//     <Header />
+//    <Searchbox/>
+//   </div>
+// );
+// }
+// }
 
 
 export default App;

@@ -5,15 +5,15 @@ export default function Navbar(props){
         <a href="/" className="site-title">{props.bar}</a>
         <ul>
             <li>
-                <a href="/Today" className="links">Articles</a>
+                <a href="links" className="links">Articles</a>
             </li>
              <li>
-                <a href="/Radar" className="links">Login</a>
+                <a href="/" className="links">Sports</a>
             </li>
-            <a href="/Radar" className="links">About</a>
+            <a href="/" className="links">Tech</a>
             <li>
             </li>
-            <a href="/Radar" className="links">Help</a>
+            <a href="/aboutMe" className="links">About Me</a>
         </ul>
     </nav>
 }
